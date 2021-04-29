@@ -27,7 +27,7 @@ macro_log_feature(GOBJECT_FOUND "GObject" "Required to build ${proj_name}" "http
 find_package(ZED 3)
 macro_log_feature(ZED_FOUND "ZED SDK" "Required to build 'gstzed'" "https://www.stereolabs.com" FALSE "3")
 
-find_package(CUDA ${ZED_CUDA_VERSION} EXACT)
+find_package(CUDA ${ZED_CUDA_VERSION})
 macro_log_feature(CUDA_FOUND "Nvidia CUDA library" "Required to build 'gstzed'" "http://www.nvidia.com" FALSE "${ZED_CUDA_VERSION}")
 
 find_package(OpenCV)
